@@ -355,36 +355,6 @@ footer{margin-top:auto;padding-top:10px}
  .o span{font-size:0!important;line-height:0;color:transparent}.o span strong{font-size:9.5pt;line-height:1.1;margin:0;color:#062B38}
  .bottom-band{padding:1.6mm 7mm;font-size:8.5pt}
 
- /* ALLEGE */
- #poster{background:#fff!important}
- #stars,.constellation,.verbs,.card>.ic,.kl .ic,.p .ic,.card::after{display:none!important}
- header>div:nth-child(2){left:62mm}
- .mark{box-shadow:none}
- .data-period{background:#fff;border-color:#9CCFDD}
- .num{box-shadow:none}
- .card,.fam,.impact-col-stack .fam{box-shadow:none!important;background:#fff!important;border:1px solid #D3E6ED!important}
- .card{grid-template-columns:minmax(0,1fr) auto!important;padding:1.6mm 3mm!important}
- .card .l{grid-column:1!important}.card .v{grid-column:2!important}
- .card>.annual{border-top:0!important;padding-top:.6mm!important}
- .annual-change.blue{background:none!important;padding:0!important;font-weight:600}
- .strat{background:none!important;border:0!important;padding:0!important}
- .prio{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8mm 4mm}
- .prio .p{flex:none!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
- .prio .p b{font-size:10.5pt;font-weight:600;color:#062B38}
- .prio .p::before{content:"";width:1.6mm;height:1.6mm;border-radius:50%;background:#0393B4;margin-right:2mm;flex-shrink:0;align-self:center}
- .prio .p{display:flex!important;align-items:center}
- .cata{border-top:0!important;margin-top:1mm!important;padding-top:0!important;gap:2mm!important}
- .cata>b{font-size:8.5pt!important;letter-spacing:.06em!important}
- .cata ul{gap:0!important;flex:none!important}
- .cata li{flex:none!important;background:none!important;border:0!important;padding:0!important;font-size:9.5pt!important;color:#007A69}
- .cata li+li::before{content:"·";margin:0 2mm;color:#4FAF9C}
- .fam-head{border-bottom:1.4px solid #D3E6ED!important}
- .k,.impact-col-stack .k,.impact-col-stack .fam-durable .k{border-bottom:1px solid #EDF4F7!important;padding-bottom:.9mm!important}
- .kpis,.impact-col-stack .kpis,.impact-col-stack .fam-durable .kpis{gap:.9mm!important}
- .k>.annual{margin-left:0!important}
- .fam-durable{background:#fff!important;border-color:#BFE0D8!important}
- footer{border-top:1px solid #D3E6ED!important}
-
  /* SANS_N1 : chiffre + evolution uniquement */
  .card>.annual,.k>.annual{display:none!important}
  .card{grid-template-rows:auto!important;align-items:center!important;padding:2.6mm 3.4mm!important}
@@ -422,6 +392,28 @@ footer{margin-top:auto;padding-top:10px}
 
  .k,.impact-col-stack .k,.impact-col-stack .fam-durable .k{padding-bottom:1.25mm!important}
  .kpis,.impact-col-stack .kpis,.impact-col-stack .fam-durable .kpis{gap:1.25mm!important}
+
+ /* COULEURS + CHIFFRES PLUS PETITS */
+ .card{grid-template-columns:auto 1fr auto!important;gap:1.2mm 2mm!important;padding:2.6mm 3.4mm 2.8mm!important}
+ .card>.ic{display:block!important;grid-column:1!important;grid-row:1!important;width:4.8mm!important;height:4.8mm!important;align-self:center}
+ .card .l{grid-column:2/-1!important;grid-row:1!important;color:#062B38!important;align-self:center!important}
+ .card .v{grid-column:1/3!important;grid-row:2!important;font-size:16.5pt!important}
+ .card .v u{font-size:9.5pt!important}
+ .card>.annual-change{grid-column:3!important;grid-row:2!important}
+ .k .v{font-size:14.5pt!important}.k .v u{font-size:9pt!important}
+ .fam-durable .k .v{font-size:13.5pt!important}
+ .k .r .annual-change{min-width:0}
+ .annual-change.blue{padding:.3mm 1.2mm!important;border-radius:1.2mm!important;background:rgba(3,147,180,.10)!important}
+ .k .l{font-size:10.5pt!important}
+
+ .kl .ic{display:none!important}
+ .card{padding:2.1mm 3.2mm 2.3mm!important}
+ .verbs{letter-spacing:.07em!important}
+ header>div:nth-child(2){left:62mm!important}
+
+ .k,.impact-col-stack .k,.impact-col-stack .fam-durable .k{padding-bottom:1mm!important}
+ .kpis,.impact-col-stack .kpis,.impact-col-stack .fam-durable .kpis{gap:1mm!important}
+ .res{gap:2mm!important}
 }
 /* LEGIBLE_A4_END */
 
