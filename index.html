@@ -384,6 +384,44 @@ footer{margin-top:auto;padding-top:10px}
  .k>.annual{margin-left:0!important}
  .fam-durable{background:#fff!important;border-color:#BFE0D8!important}
  footer{border-top:1px solid #D3E6ED!important}
+
+ /* SANS_N1 : chiffre + evolution uniquement */
+ .card>.annual,.k>.annual{display:none!important}
+ .card{grid-template-rows:auto!important;align-items:center!important;padding:2.6mm 3.4mm!important}
+ .card .l{grid-row:1!important;font-size:11.5pt!important}
+ .card .v{grid-row:1!important;font-size:21pt!important;display:flex;flex-direction:column;align-items:flex-end}
+ .card>.annual-change{grid-column:2!important;grid-row:2!important;justify-self:end;align-self:start;margin-top:.6mm!important}
+ .k,.impact-col-stack .k,.impact-col-stack .fam-durable .k{grid-template-rows:auto!important;align-items:center!important;padding-bottom:2mm!important;gap:0 3mm!important}
+ .kpis,.impact-col-stack .kpis,.impact-col-stack .fam-durable .kpis{gap:2mm!important}
+ .k .l{font-size:11pt!important;line-height:1.15!important}
+ .k .r{grid-row:1!important;flex-direction:row!important;align-items:baseline!important;gap:2.6mm!important}
+ .k .v{font-size:17pt!important}
+ .fam-durable .k .v{font-size:15pt!important}
+ .k .r .annual-change{order:-1;min-width:15mm;text-align:right;font-size:10pt!important}
+ .card>.annual-change{font-size:10pt!important}
+ .fam,.impact-col-stack .fam{padding:2.6mm 3.4mm 2.2mm!important}
+ .fam-head{padding-bottom:1.8mm!important;margin-bottom:2mm!important}.fam-head b{font-size:13pt!important}
+ .impact-col{gap:3mm!important}.impact{gap:3.4mm!important}
+ .res{gap:2.6mm!important}
+ .axis{gap:2.2mm!important}
+
+ .card{grid-template-columns:minmax(0,1fr) auto auto!important;column-gap:2.4mm!important;padding:2.4mm 3.4mm!important}
+ .card .v{grid-column:3!important;grid-row:1!important;font-size:20pt!important}
+ .card>.annual-change{grid-column:2!important;grid-row:1!important;align-self:center!important;margin:0!important;font-size:9.5pt!important}
+ .card .l{font-size:11pt!important;line-height:1.12!important}
+ .k .l{font-size:10.5pt!important}
+ .k .v{font-size:16.5pt!important}
+ .k .r .annual-change{font-size:9.5pt!important;min-width:14mm}
+ .k,.impact-col-stack .k,.impact-col-stack .fam-durable .k{padding-bottom:1.6mm!important}
+ .kpis,.impact-col-stack .kpis,.impact-col-stack .fam-durable .kpis{gap:1.6mm!important}
+
+ .card{display:grid!important;grid-template-columns:auto 1fr!important;grid-template-rows:auto auto!important;align-items:baseline!important;gap:1mm 3mm!important;padding:2.2mm 3.4mm 2.4mm!important}
+ .card .l{grid-column:1/-1!important;grid-row:1!important;font-size:10.5pt!important;font-weight:600;color:#3D6170!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .card .v{grid-column:1!important;grid-row:2!important;font-size:20pt!important;text-align:left!important;display:block!important}
+ .card>.annual-change{grid-column:2!important;grid-row:2!important;justify-self:end!important;align-self:baseline!important}
+
+ .k,.impact-col-stack .k,.impact-col-stack .fam-durable .k{padding-bottom:1.25mm!important}
+ .kpis,.impact-col-stack .kpis,.impact-col-stack .fam-durable .kpis{gap:1.25mm!important}
 }
 /* LEGIBLE_A4_END */
 
@@ -443,9 +481,6 @@ footer{margin-top:auto;padding-top:10px}
   <div class="axis-head"><span class="num">02</span><h2>Notre stratégie</h2>
     <p>Six priorités structurantes pour un hôpital antifragile, responsable et tourné vers l'avenir.</p></div>
   <div class="strat">
-    <svg class="constellation" viewBox="0 0 1080 180" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M180 46 L540 46 L900 46 L720 134 L360 134 L180 46 M540 46 L360 134"/>
-    </svg>
     <div class="prio" id="prio"></div>
     <div class="cata">
       <b>Nos catalyseurs</b>
